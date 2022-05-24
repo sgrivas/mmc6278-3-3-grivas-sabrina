@@ -1,6 +1,10 @@
 // Your code here
 function runQuiz(){
-    console.log("Hellow")
+    var percentage = 0;
+    for (let index = 0; index < questionsArr.length; index++) {
+        const element = questionsArr[index].question;
+        confirm(element)
+    }
 }
 var questionsArr= [
     {
@@ -22,5 +26,5 @@ var questionsArr= [
     {
         question: 'Humans have 4 senses',
         answer: false
-    },
+    }
 ]
