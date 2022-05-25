@@ -9,7 +9,7 @@ function runQuiz(){
             answeredCorrect++
         }
     }
-    var percentRight = Math.round((answeredCorrect/5)*100);
+    var percentRight = Math.round((answeredCorrect/questionsArr.length)*100);
     alert(`You got ${percentRight}% of questions right!`);
 }
 var questionsArr= [
@@ -32,5 +32,9 @@ var questionsArr= [
     {
         question: 'Humans have 4 senses',
         answer: false
+    },
+    {
+        question: 'The first living animal sent into space were fruit flies.',
+        answer: true
     }
 ]
